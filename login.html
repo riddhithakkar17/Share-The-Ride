@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+    <a class="navbar-brand align-content-start" href="#"><img src="logo.jpg"  alt="logo"></a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class='fas fa-home'>&nbsp;</i> Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="login.html"><i class="fas fa-user">&nbsp;</i> Log In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signin.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope">&nbsp;</i> Contact Us</a>
+      </li> -->
+    </ul>
+  </nav>    
+
+    
+<div class="container-fluid p-1 bg-light ">
+    <form action="Validation.php" style=" margin:auto; width: 350px;" class="needs-validation login" method="POST" novalidate>
+        <div class="form-group">
+            <label for="">Username</label>
+            <input type="text" name="t1" id="" class="form-control hil" placeholder="Enter Username" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input type="password" class="form-control hil" name="t2" id="" placeholder="Enter Password" required>
+          <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="form-group">
+          <br>
+              <i class="fab fa-facebook-square text-center" style="font-size: 45px;">&nbsp;</i>
+              <i class="fab fa-google-plus-square text-center" style="font-size: 45px;">&nbsp;</i>
+              <i class="fab fa-twitter-square text-center" style="font-size: 45px;">&nbsp;</i>
+        </div>
+        <p><a href="signin.html" style="color: rgb(47, 36, 36);">Don't have an account?</a></p>
+
+    </form>
+
+
+  </div>
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+</body>
+</html>

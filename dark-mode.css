@@ -1,0 +1,35 @@
+[data-theme="dark"] .container-fluid{
+  background-color: #333 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .navbar{
+  background-color: #333 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] div{
+  background-color: #333 !important;
+  color: whitesmoke;
+}
+
+[data-theme="dark"] div p{
+  color: rgb(0, 225, 255)
+}
+
+
+[data-theme="dark"] .list-group-item, .list-group-item a{
+  color: rgb(125, 253, 51);
+}
+
+[data-theme="dark"] div div ul li a{
+  color: rgb(125, 253, 51);
+}
+
+[data-theme="dark"] .navbar a{
+  color: rgb(0, 225, 255)
+}
+
+[data-theme="dark"] .nav-item .nav-link {
+  color: rgb(20, 212, 129)
+}
